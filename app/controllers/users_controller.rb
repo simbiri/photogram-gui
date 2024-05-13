@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     new_user.private = false
     new_user.save
 
-    redirect_to("/users")
+    redirect_to("/users/#{new_user.username}")
   end
 
   def update_user

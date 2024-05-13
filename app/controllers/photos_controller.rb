@@ -28,7 +28,7 @@ class PhotosController < ApplicationController
     new_photo.owner_id =  params.fetch("input_owner_id")
     new_photo.save
 
-    redirect_to("/photos")
+    redirect_to("/photos/#{new_photo.id}")
   end
 
   def update_photo
